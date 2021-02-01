@@ -1,0 +1,22 @@
+<div class="content">
+  <h1>Профиль</h1>
+  <form [action]="submit" class="common-info-form" [formGroup]="form" *ngIf="form">
+    <mat-form-field class="field">
+      <mat-label>Имя пользователя</mat-label>
+      <input matInput formControlName="username">
+    </mat-form-field>
+    <mat-form-field class="field">
+      <mat-label>Имя</mat-label>
+      <input matInput formControlName="first_name">
+    </mat-form-field>
+    <mat-form-field class="field">
+      <mat-label>Фамилия</mat-label>
+      <input matInput formControlName="last_name">
+    </mat-form-field>
+    <mat-form-field class="field">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="submit()">Сохранить</button>
+  </form>
+</div>

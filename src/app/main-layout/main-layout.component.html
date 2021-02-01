@@ -1,0 +1,30 @@
+<header>
+  <mat-toolbar color="primary">
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <a class="title" routerLink="/">DevSpace</a>
+        <a routerLink="/papers" routerLinkActive="active">Статьи</a>
+        <a routerLink="/forum" routerLinkActive="active">Форум</a>
+        <a routerLink="/courses" routerLinkActive="active">Курсы</a>
+        <a routerLink="/chats" routerLinkActive="active">Чаты</a>
+      </div>
+      <div *ngIf="authService.isAuthorized; then authorizedButtons else notAuthorizedButtons"></div>
+      <ng-template #notAuthorizedButtons>
+        <div class="toolbar-right">
+          <a routerLink="/login" routerLinkActive="active">Вход</a>
+          <a routerLink="/login" routerLinkActive="active">Регистрация</a>
+        </div>
+      </ng-template>
+      <ng-template class="toolbar-right"  #authorizedButtons>
+        <div class="toolbar-right">
+          <a routerLink="/admin" routerLinkActive="active" *ngIf="authService.isAdmin">Панель администратора</a>
+          <a routerLink="/profile" routerLinkActive="active">Профиль</a>
+          <a href="#" (click)="authService.logout()">Выход</a>
+        </div>
+      </ng-template>
+    </div>
+  </mat-toolbar>
+</header>
+<div class="container content">
+  <router-outlet></router-outlet>
+</div>

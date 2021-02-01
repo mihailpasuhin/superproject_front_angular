@@ -1,0 +1,6 @@
+<div class="header" *ngIf="thread">
+{{ thread.title }}
+</div>
+<div *ngIf="thread">
+  <app-post *ngFor="let post of thread.posts" [post]="post"></app-post>
+</div>

@@ -1,0 +1,14 @@
+<div class="login">
+  <h1>Вход</h1>
+  <form [action]="submit" class="login-form" [formGroup]="form">
+    <mat-form-field class="field">
+      <mat-label>Имя пользователя</mat-label>
+      <input matInput formControlName="username">
+    </mat-form-field>
+    <mat-form-field class="field">
+      <mat-label>Пароль</mat-label>
+      <input type="password" matInput formControlName="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="submit()">Войти</button>
+  </form>
+</div>

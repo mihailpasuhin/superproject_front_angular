@@ -1,0 +1,47 @@
+.section {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+  background-color: white;
+  padding-bottom: 30px;
+  box-shadow: 0 0 3px #bfbfbf;
+}
+.header {
+  height: 30px;
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.subheader {
+  height: 20px;
+  background: linear-gradient(180deg, rgba(63,81,181,1) 0%, rgba(255,255,255,1) 100%);
+  display: flex;
+  justify-content: flex-end;
+}
+.helper {
+  margin-right: 20px;
+  display: flex;
+}
+.stat-section {
+  //border: 1px solid blue;
+  margin-left: 15px;
+}
+.last-theme {
+  width: 200px;
+}
+.last-author {
+  width: 100px;
+}
+.date {
+  width: 100px;
+}
+.themes-count {
+  width: 50px;
+}
+.messages-count {
+  width: 50px;
+}

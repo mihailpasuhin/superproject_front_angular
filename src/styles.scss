@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.snow.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #f6f6f6; color: #454545; overflow-y: scroll; }
+a {
+  color: #454545;
+  text-decoration: none;
+  }
+a:hover {
+  color: #8f8f8f;
+}
+
+.ql-container {
+  font-size: 16px;
+}
+
+.ql-editor {
+  font-size: 16px;
+  height: auto;
+  min-height: 200px;
+}

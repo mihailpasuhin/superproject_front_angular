@@ -1,0 +1,9 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  .left-column {
+    order: -1;
+    margin: 10px;
+    min-width: auto;
+  }
+}

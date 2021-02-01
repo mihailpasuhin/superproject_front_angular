@@ -1,0 +1,48 @@
+.paper {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  box-shadow: 0 0 5px #bfbfbf;
+}
+.content {
+  text-align: justify;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  align-content: center;
+  flex-direction: row;
+}
+.counter {
+  padding: 5px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 15px;
+  color: #494981;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  margin-right: 3px;
+  font-size: 20px;
+}
+.title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.tags {
+  color: gray;
+  margin-bottom: 5px;
+}
+.author-date {
+  margin-bottom: 10px;
+}
+.date {
+  margin-left: 20px;
+  color: gray;
+}

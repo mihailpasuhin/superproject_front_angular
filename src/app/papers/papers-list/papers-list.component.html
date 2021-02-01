@@ -1,0 +1,4 @@
+<div class="content" *ngIf="papers.length">
+  <app-paper-card *ngFor="let paper of papers" [paper]="paper"></app-paper-card>
+  <button mat-button (click)="downloadMore()">Загрузить еще</button>
+</div>

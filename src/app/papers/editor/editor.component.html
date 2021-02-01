@@ -1,0 +1,16 @@
+<div class="paper-editor">
+  <form [action]="submit" class="editor" [formGroup]="form">
+    <h1>Создание статьи</h1>
+      <mat-form-field>
+        <mat-label>Заголовок</mat-label>
+        <input matInput placeholder="Заголовок статьи..." formControlName="title">
+      </mat-form-field>
+    <div class="content">
+        <mat-label>Контент</mat-label>
+        <quill-editor formControlName="content"></quill-editor>
+    </div>
+    <div class="submit">
+      <button mat-raised-button (click)="submit()">Отправить</button>
+    </div>
+  </form>
+</div>

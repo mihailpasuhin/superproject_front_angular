@@ -1,0 +1,27 @@
+header a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+header a.active {
+  color: #bebebe;
+}
+.title {
+  margin-right: 50px;
+  text-decoration: none;
+}
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 60%;
+  margin: auto;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  padding: 0 20px;
+}

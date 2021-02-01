@@ -1,0 +1,15 @@
+<div class="section">
+  <div class="header">
+    {{ subsection.title }}
+  </div>
+  <div class="subheader">
+    <!--    <div class="helper">-->
+    <!--      <div class="stat-section last-theme">Последняя тема</div>-->
+    <!--      <div class="stat-section last-author">Автор</div>-->
+    <!--      <div class="stat-section date">Дата</div>-->
+    <!--      <div class="stat-section themes-count">Тем</div>-->
+    <!--      <div class="stat-section messages-count">Сообщений</div>-->
+    <!--    </div>-->
+  </div>
+  <app-subsection *ngFor="let threads of subsection.threads"></app-subsection>
+</div>

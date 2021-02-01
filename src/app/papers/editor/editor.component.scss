@@ -1,0 +1,13 @@
+.paper-editor {
+  border: 1px solid #efefef;
+  background-color: #fdfdfd;
+  padding: 50px;
+}
+.editor {
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  margin: 20px;
+  align-self: flex-end;
+}

@@ -1,0 +1,6 @@
+<div class="section" *ngIf="subsection">
+  <div class="header">
+    {{ subsection.title }}
+  </div>
+  <app-thread *ngFor="let thread of subsection.threads" [thread]="thread"></app-thread>
+</div>

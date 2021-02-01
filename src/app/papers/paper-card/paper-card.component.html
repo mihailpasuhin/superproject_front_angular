@@ -1,0 +1,27 @@
+<div class="paper">
+  <div class="author-date">
+    <a href="#" class="author">rainer048</a>
+    <span class="date">10.03.2020</span>
+  </div>
+  <div class="title">{{ paper.title }}</div>
+  <div class="tags">{{ paper.tags.join(' ') }}</div>
+  <div class="content">
+    <quill-view-html [content]="paper.content | limitSymbols:1000 " class="content-viewer"></quill-view-html>
+  </div>
+  <hr>
+  <div class="footer">
+    <div class="footer-content">
+      <a routerLink="paper" [queryParams]="{id: paper.id}">Читать далее</a>
+    </div>
+    <div class="footer-content">
+      <div class="like counter">
+        <mat-icon class="icon">thumb_up</mat-icon>
+        <span class="count">{{ paper.likes_count }}</span>
+      </div>
+      <div class="dislike counter">
+        <mat-icon class="icon">thumb_down</mat-icon>
+        <span class="count">{{ paper.dislikes_count }}</span>
+      </div>
+    </div>
+  </div>
+</div>

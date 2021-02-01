@@ -1,0 +1,14 @@
+<div class="post">
+  <div class="user-info">
+    <a href="user">{{ post.author.username }}</a>
+    <img class="avatar" [src]="post.author.avatar" alt="">
+    <p>Зарегистрирован: 10.06.2020</p>
+    <p>Всего сообщений: 12</p>
+    <p>Рейтинг: 2/10</p>
+  </div>
+  <div class="content">
+    <quill-view-html [content]="post.text"></quill-view-html>
+    <hr style="width: 100%">
+    <span>Подпись</span>
+  </div>
+</div>

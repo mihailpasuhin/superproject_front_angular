@@ -1,0 +1,6 @@
+<div class="section">
+  <div class="header">
+    {{ section.title }}
+  </div>
+  <app-subsection *ngFor="let subsection of section.subsections" [subsection]="subsection"></app-subsection>
+</div>

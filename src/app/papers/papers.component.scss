@@ -1,0 +1,17 @@
+.papers {
+  display: flex;
+  flex-direction: row;
+  .paper-header {
+    height: 20px;
+  }
+  .content {
+    order: 0;
+    margin: 15px;
+    flex: 4;
+    overflow: hidden;
+  }
+  .right-column {
+    flex: 1;
+    order: 1;
+  }
+}

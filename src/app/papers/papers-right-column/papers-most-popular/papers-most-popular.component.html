@@ -1,0 +1,8 @@
+<h4>САМОЕ ЧИТАЕМОЕ</h4>
+<hr>
+<div class="links">
+  <div *ngFor="let paper of papers" class="paper-link">
+    <a class="author" [routerLink]="['paper']" [queryParams]="{ id: paper.id }">rainer048</a><br>
+    <a [routerLink]="['paper']" [queryParams]="{ id: paper.id }">{{ paper.title }}</a>
+  </div>
+</div>

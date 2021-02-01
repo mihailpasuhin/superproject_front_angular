@@ -1,0 +1,32 @@
+.post {
+  //height: auto;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  background-color: #fdfdfd;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.avatar {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+.user-info {
+  border-right: 1px solid #efefef;
+  width: 10%;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 12px;
+  line-height: 10px;
+  justify-content: flex-start;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: justify;
+  width: 100%;
+}
